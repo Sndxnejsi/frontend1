@@ -1,6 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+ 
 /*é um seletor de formatação universal e aplica-se a todas a tags */
 * {
      margin: 0;
@@ -8,7 +8,7 @@
      padding: 0;
      /*margem interna */
 }
-
+ 
 /* Regra */
 body {
      /* Propiedade: valor */
@@ -16,7 +16,7 @@ body {
      color: black;
      font-family: 'Poppins';
 }
-
+ 
 header {
      background-color: #0e365f;
      /*Cor de fundo*/
@@ -27,14 +27,14 @@ header {
      padding: 20px 0px 20px 0px;
      /*top right bottom left*/
 }
-
+ 
 footer {
      background-color: #f1f1f1;
      padding: 30px;
      text-align: center;
      color: #777;
 }
-
+ 
 /*Formatação genérica para os links */
 a {
      text-decoration: none;
@@ -42,14 +42,14 @@ a {
      color: #492291
           /*alterar a cor dos links*/
 }
-
+ 
 a:hover {
      text-decoration: underline;
      /*volta o sublinhado quando passar o mouse em cima*/
 }
-
+ 
 /*formatação da home*/
-
+ 
 main {
      width: 1200px;
      /*fixa largura*/
@@ -57,20 +57,20 @@ main {
      /*Centralizar o container (elemento de bloco)*/
      padding: 40px 0px 40px 0px;
 }
-
+ 
 section {
      margin-bottom: 40px;
 }
-
+ 
 h2 {
      text-align: center;
      margin-top: 50px;
 }
-
+ 
 /*o ponto(.) indica que "destaque" é uma classe não uma tag */
 .destaque {
      text-align: center;
-
+ 
      p {
           /*CSS nesting (alinhamento CSS)*/
           color: #444;
@@ -81,7 +81,7 @@ h2 {
           /*altura da linha ou espaçamento entre linhas*/
      }
 }
-
+ 
 h1 {
      font-size: 2rem;
      margin-bottom: 10px;
@@ -89,31 +89,31 @@ h1 {
      /* carga com valores de 100 a 900 se a font permitir*/
      /*font-style: italic;    fonte itálico*/
 }
-
+ 
 .grid-home {
      display: flex;
      /*flexbox*/
      flex-wrap: wrap;
      /*permitir a quebra de linha dos elementos*/
      gap: 25px;
-
+ 
      /*espaçamento entre os elementos*/
      * {
           flex-basis: 250px;
-          /*tamanho inicial para o elemtento filho*/
+          /*tamanho inicial para o elemento filho*/
           flex-grow: 1;
           /*permitir aumentar o tamanho */
           flex-shrink: 1;
           /*permitir reduzir o tamanho*/
      }
-
+ 
      a {
           text-decoration: none;
           /*tirar o sublinhado*/
           color: #000;
      }
 }
-
+ 
 .card {
      /*aplicar sombra*/
      /*0:deslocamento horizontal, 3px vertical,10px:desfoque, rgba:cor*/
@@ -121,9 +121,9 @@ h1 {
      padding-bottom: 15px;
      /*margem interna*/
      border-radius: 20px;
-     /*Catos arredondados*/
+     /*Cantos arredondados*/
      text-align: center;
-
+ 
      img {
           width: 100%;
           /*fixa  a largura proporcional*/
@@ -132,31 +132,32 @@ h1 {
           height: 160px;
           /*altura original  da imagem*/
      }
-
+ 
      h3 {
           color: #6a3bc8;
           margin: 15px 0 8px 0;
      }
-
+ 
      p {
           padding: 0px 10px;
           font-size: 0.95rem;
      }
-
+ 
 }
-
+ 
 /*Formatar o comportamento do card*/
 .card:hover {
      transform: translateY(-5px);
      /*modifica a aparência visual do elemento*/
 }
-
+ 
 .redes-sociais {
      display: flex;
      justify-content: center;
+     flex-wrap: wrap;
      gap: 15px;
      margin: 10px;
-
+ 
      a {
           background-color: #ccc;
           padding: 10px 15px;
@@ -167,46 +168,46 @@ h1 {
           border-radius: 8px;
           /*arredondar os cantos*/
      }
-
+ 
      a:hover {
           transform: translateY(-2px);
      }
-
+ 
      /*o nth-child seleciona elementos filhos de uma tag usada em grupo*/
      a:nth-child(1) {
           background-color: #3b5998;
           /*cor para o Facebook*/
      }
-
+ 
      a:nth-child(2) {
           background-color: #ff0000;
           /*cor para o Youtube*/
      }
-
+ 
      a:nth-child(3) {
           background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
           /*cor para o Instagram,é uma mistura de cores*/
      }
-
+ 
      a:nth-child(4) {
           background-color: #25d366;
           /*cor para o WhatsApp*/
      }
-
+ 
      a:nth-child(5) {
           background-color: #000;
           /*cor para o TikTok*/
      }
-
+ 
 }
-
+ 
 /*link voltar do rodapé das páginas*/
 .voltar {
      text-align: center;
      margin-top: 20px;
 }
-
-
+ 
+ 
 /*formatação do grid de clínica*/
 .grid-clínica {
      display: flex;
@@ -214,7 +215,7 @@ h1 {
      justify-content: space-between;
      /*alinha pelas margens externas(direita e esquerda)*/
      gap: 1.5rem;
-
+ 
      div {
           flex-grow: 1;
           /*permite expandir a largura*/
@@ -223,267 +224,371 @@ h1 {
           flex-basis: 300px;
           /*tamanho inicial*/
      }
-
+ 
      img {
           width: 100%;
           /*imagem responsiva*/
      }
-
+ 
      h2 {
           text-align: start;
           /*alinha à esquerda*/
           margin-bottom: 15px;
           margin-top: 0px;
      }
-
+ 
      p {
           line-height: 150%;
           /*altura da linha ou espaçamento entre linhas*/
           margin-bottom: 15px;
           /*margem superior*/
-
+ 
      }
-
+ 
      ul,
      ol {
           padding-left: 20px;
           list-style: square;
-
+ 
           li {
                line-height: 170%;
           }
      }
-
+ 
 }
-
+ 
 .grid-Especialidades {
      display: flex;
      flex-wrap: wrap;
      gap: 25px;
-
+ 
      * {
           flex-basis: 350px;
           flex-grow: 1;
           flex-shrink: 1;
      }
-
+ 
      a {
           text-decoration: none;
           /*tirar o sublinhado*/
           color: #000;
      }
-
+ 
 }
-
+ 
 /*Formatação das tabelas*/
-
+ 
 table {
      width: 100%;
      border-collapse: collapse;
      /*junta as bordas em uma*/
 }
-
+ 
 th {
      text-align: start;
      /*alinhamento a esquerda*/
 }
-
+ 
 .tabela1 th {
      background-color: #aaa;
      border: 2px solid #aaa;
      padding: 8px;
 }
-
+ 
 .tabela1 td {
      border: 2px solid #ccc;
      padding: 8px;
 }
-
+ 
 .tabela1 td:nth-child(3),
 .tabela1 th:nth-child(3) {
      /*pseudo seletor */
      text-align: end;
      font-weight: 500;
 }
-
+ 
 .tabela1 td:nth-child(4),
-.tabela td:nth-child(4) {
+.tabela1 th:nth-child(4) {
      /*pseudo seletor */
      text-align: center;
 }
-
+ 
+/*
 .tabela1 tr:nth-child(even) {
      /*even=par, odd=ímpar*/
-     color: green;
-}
-
-
+/* escolhe a cor por exemplo:color: green;}*/
+ 
 .tabela2 th {
      border-collapse: 2px solid #aaa;
      padding: 8px;
-
+ 
 }
-
+ 
 .tabela2 td {
      border-top: 2px solid #ccc;
      padding: 8px;
 }
-
+ 
 .tabela2 th {
      border-bottom: 4px solid #777;
      padding: 8px;
 }
-
+ 
 .tabela2 td:nth-child(3),
-.tabela2 td:nth-child(3) {
-     /*pseudo seletor */
+.tabela2 th:nth-child(3) {
      text-align: end;
      font-weight: 500;
 }
-
-
+ 
+.tabela2 td:nth-child(4),
+th:nth-child(4) {
+     text-align: center;
+     font-weight: 500;
+}
+ 
 .tabela3 th {
      border-collapse: 2px solid #aaa;
      padding: 8px;
 }
-
+ 
 .tabela3 td {
      border-top: 2px solid #ccc;
      padding: 8px;
 }
-
+ 
 .tabela3 td:nth-child(3),
 .tabela3 td:nth-child(3) {
+     text-align: end;
+     font-weight: 500;
+}
+ 
+.tabela3 td:nth-child(4),
+.tabela3 th:nth-child(4) {
+     text-align: center;
+     font-weight: 500;
+}
+ 
+.tabela3 tr:nth-child(even) {
+     /*even=par, odd=ímpar*/
+     background-color: #ccc;
+}
+ 
+.tabela3 th {
+     background-color: #ccc;
+}
+ 
+.tabela3 th:nth-child(3) {
      /*pseudo seletor */
      text-align: end;
      font-weight: 500;
 }
-
-.tabela3 tr:nth-child(odd) {
-     /*even=par, odd=ímpar*/
-     background-color: #ccc;
-}
-
-
-/* formatação da galeria de imagens */
-
+ 
+/*fomrmatação da galeria de imagens*/
+ 
 .galeria-destaque {
-
      display: flex;
+     /*necessário, pois img é tag inline*/
      justify-content: center;
+     /*centralizar a imagem*/
      background-color: #333;
      margin: 30px 0px 10px 0px;
-
+ 
+     /*top right */
      img {
-          width: 60px;
+          width: 60%;
      }
-
 }
-
-
+ 
 .galeria-miniaturas {
-
+     display: flex;
+     justify-content: space-between;
+ 
      img {
-          display: flex;
-          justify-content: space-between;
           width: 110px;
      }
-
-
 }
-
-
-
+ 
 .videos {
      text-align: center;
-
+ 
      video {
           width: 70%;
      }
-}
-
-
-.grid-convenios {
-     h1 {
-          text-align: center
+ 
+     iframe {
+          width: 70%;
+          /*height: 415px;*/
+          height: 60vh;
      }
-
-     div {
-          display: flex;
+}
+ 
+.grid-convenios {
+     div{
+          display:flex;
           justify-content: space-between;
-          margin-top: 30px;
+          margin-top: 20px;
           margin-bottom: 100px;
      }
-
-     * {
+     
+     *{
           flex-basis: 300px;
           flex-grow: 1;
           flex-shrink: 1;
      }
-
-     i {
-          font-size: 60px;
+ 
+     i{
+ 
           text-align: center;
+          font-size: 75px;
      }
-
+ 
      h3 {
-          font-size: 21px;
-          color: #6a3bc8;
+          font-size: 21px;  
      }
 }
-
-.contato {
+ 
+/*Formatação do contato*/
+ 
+.contato{
      display: flex;
      justify-content: space-between;
-
-     div {
+     div{                          /*formatação para todas as divs de contato*/
           flex-basis: 45%;
           flex-grow: 1;
           flex-shrink: 1;
-     }
-     div:last-child{
-      iframe{
-          width: 100%;
-          height: 80vh;
-      }
+     }  
+     div:last-child{               /* Formata a última div (do mapa) */
+          iframe{
+               width: 100%;
+               height: 80vh;
+          }
      }
      label{
- display: block;
-
- text-transform: uppercase;
- font-weight: bold;
- font-size: .9rem;
- margin-top: 20px;
- color: #555;
+          display: block;
+          /*background-colour: #25d366*/
+          text-transform: uppercase;         /*caixa alta*/
+          font-weight: bold;          
+          font-size: .9rem;
+          margin-top: 20px;
+          color: #555;
      }
-
-     .input[type=text], input[type=email]{
+ 
+     input[type=text], input[type=email]{
           padding: 10px;
           width: 90%;
           border: 1px solid #bbb;
+          border-radius: 5px;
      }
-
+     
+     select{
+          padding: 8px;
+          border: 1px solid #bbb;
+          border-radius: 5px;
+         
+     }
+     input[type=checkbox]{
+          margin-top: 20px;
+          margin-bottom: 20px;
+     }
+     input[type=submit]{
+          border-style: none;      /*retirar a borda*/
+          background-color: #3b5998;
+          color: #fff;
+          padding: 10px 30px;
+          border-radius: 5px;
+          cursor: pointer;              /*muda o cursor ára a mãozinha*/
+     }
+     input[type=submit]:hover{               /* quando passar o mouse no botão*/
+          background-color: #405de6;
+     }
+ 
+}
+ 
+/*Formatação do agendamento*/
+ 
+.agendamentos{
+     margin: 0px auto;             /*centraliza o container*/
+     width: 50%;
+     text-align: center;           /*centralizar conteudo*/
+     label{
+          display: block;          /*transformar me bloco para ficar separado do campo*/
+          text-transform: uppercase;
+          margin: 20px;
+          font-weight: bold;
+          font-size: .9rem;
+          color: #555;
+     }
+     .form-group{
+          display: flex;                          /*disposição lado a lado*/
+          justify-content: space-between;         /*distribuição do conteúdo*/
+     }
+     input[type=data],
+     input[type=data],
      select{
           padding: 8px;
           border: 1px solid #bbb;
           border-radius: 5px;
      }
-
-     input[type=checkbox]{
-     margin-top: 25px;
-     margin-bottom: 25px
+     select[type=time] {
+          padding: 7px;
+     }
+     input[type=text]{
+          width: 80%;
+          padding: 8px;
+     }
+     input[type=submit]{
+          border-style: none;    
+          background-color: #3b5998;
+          color: #fff;
+          padding: 10px 30px;
+          border-radius: 5px;
+          cursor: pointer;              
+     }
+     div{
+          margin: 30px;
+     }
 }
-
-input[type=submit]{
-border-style: none;
-background-color: #3b5998;
-color: #fff;
-padding: 10px 30px;
-border-radius: 5px;
-cursor: pointer;
+ 
+/*formatação para layout responsivo*/
+ 
+@media screen and (max-width:800px){         /*media queries*/
+    /* header {
+          background-color: green;
+     }*/
+     main{
+          width: 100%;
+     }
+     .grid-home{
+          *{
+               flex-basis: 100%;
+          }
+     }
+     .grid-clínica,
+     .grid-especialidades,
+     .grid-convenios{
+          flex-direction: column;            /*muda posições de empilhamentos de tags*/
+          align-items: center;
+     }
+ 
+     .videos{
+          iframe{
+               width: 100%;
+               height: 35vh;
+          }
+          video{
+               width: 100%;
+          }
+     }
 }
-
-input[type=subimit]:hover{
-     background-color: #405de6;
-}
+@media screen and (max-width:600px){
+     /* header{
+          background-color: red;
+          } */
+         
+     }
+     @media screen and (max-width:400px){
+          /* header{
+               background-color: yellow;
+               } */
+             
 }
